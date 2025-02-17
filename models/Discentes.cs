@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace treino_modelo_faculdade.models;
 
-public class Discentes : IAcademia
+public class Discentes : FolhaPagamento, IAcademia, IAulas
 {
     public List<string> Horario()
     {
