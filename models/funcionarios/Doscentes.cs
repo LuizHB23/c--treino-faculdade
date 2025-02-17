@@ -2,11 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using treino_modelo_faculdade.interfaces;
 
 namespace treino_modelo_faculdade.models;
 
-public class Discentes : FolhaPagamento, IAcademia, IAulas
+public class Doscentes : FolhaPagamento, IAcademia, IAulas
 {
+    public Doscentes(string nome, decimal mensalidade, double porcentagem) : base(nome, mensalidade, porcentagem)
+    {
+        
+    }
+
     public List<string> Horario()
     {
         return null;
@@ -25,5 +31,5 @@ public class Discentes : FolhaPagamento, IAcademia, IAulas
     public string InformacoesGerais()
     {
         return "";
-    }
+    }   
 }

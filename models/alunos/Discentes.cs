@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using treino_modelo_faculdade.interfaces;
 
 namespace treino_modelo_faculdade.models;
 
-public class Doscentes : IAcademia
+public class Discentes : Turmas, IAcademia, IAulas
 {
     public List<string> Horario()
     {
@@ -25,5 +26,5 @@ public class Doscentes : IAcademia
     public string InformacoesGerais()
     {
         return "";
-    }   
+    }
 }
